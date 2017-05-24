@@ -2,9 +2,6 @@
 
 #### 1. 两边固定宽度，中间自适应
 
-<iframe src="https://wenhuiyang-luck.github.io/CSS-Layout/圣杯布局/index.html" width="100%" height="250px" frameborder="0" scrolling="no">
-</iframe>
-
 - [圣杯布局](https://wenhuiyang-luck.github.io/CSS-Layout/圣杯布局/index.html)   
 
 ```
