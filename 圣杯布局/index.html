@@ -5,7 +5,7 @@
 	<title>圣杯布局</title>
 	<style>
 		body {
-			min-width: 550px;
+			min-width: 600px;
 		}
 		#header,
 		#footer {
@@ -42,6 +42,22 @@
 		* html #left {
 		  left: 150px;  
 		}
+		#CodeArea {	
+			width: 600px;
+			margin: 20px auto;
+		    padding: 5px;
+		    font-family: courier new;
+		    color: #222222;
+		    background-color: #f1f1f1;
+		    border: 1px solid #c3c3c3;
+		}
+		#CodeValue, #CodeType, #CodeKey {
+		    font-weight: bold;
+		    font-size: 12px;		   
+		}
+		#CodeValue {color: blue;}
+		#CodeType {color: red;}
+		#CodeKey {color: #E64A19;}
 	</style>
 </head>
 <body>
@@ -52,5 +68,27 @@
 		<div id="right" class="column">#right</div>
 	</div>
 	<div id="footer">#Footer</div>
+
+<pre id="CodeArea">
+<span id="CodeType">HTML结构：</span>
+&lt;div id="header">#Header&lt;/div&gt;
+&lt;div id="container"&gt;
+   &lt;div id="center" class="column"&gt;#center&lt;/div&gt;		
+   &lt;div id="left" class="column"&gt;#left&lt;/div&gt;
+   &lt;div id="right" class="column"&gt;#right&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="footer">#Footer&lt;/div&gt;
+
+<span id="CodeType">CSS样式：</span>
+<span id="CodeKey">body {min-width: 550px;}</span>
+#header,#footer {<span id="CodeValue">background-color: #c9c9c9;</span>}
+#container {<span id="CodeKey">padding: 0 150px 0 200px;</span>}
+#container .column {<span id="CodeValue">height: 200px;</span> <span id="CodeKey">position: relative;</span> <span id="CodeValue">float: left;</span>}
+#center {<span id="CodeValue">background-color: green; width: 100%;</span>}
+#left {<span id="CodeValue">background-color: red; width: 200px;</span> <span id="CodeKey">margin-left: -100%; left: -200px;</span>}
+#right {<span id="CodeValue">background-color: blue; width: 150px;</span> <span id="CodeKey">margin-left: -150px; right: -150px;</span>}
+#footer {<span id="CodeValue">clear: both;}
+<span id="CodeKey">* html #left {left: 150px;}</span>
+</pre>
 </body>
 </html>
