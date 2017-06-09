@@ -4,7 +4,7 @@
 
 - [圣杯布局](https://wenhuiyang-luck.github.io/CSS-Layout/圣杯布局/index.html)   
 
-```
+```html
 <div id="header">#Header</div>
 <div id="container">
     <div id="center" class="column">#center</div>
@@ -16,7 +16,7 @@
 
 - [双飞翼布局](https://wenhuiyang-luck.github.io/CSS-Layout/双飞翼布局/index.html)
 
-```
+```html
 <div id="header">#Header</div>
 <div id="container">	
 
